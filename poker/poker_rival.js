@@ -16,7 +16,7 @@ class PokerRival {
       let card = cards[i]
       
       let is_only = sames.some(elem => elem.count == 1 && elem.strength == card.strength)
-      if (is_only && card.strength < 10) {
+      if (is_only && card.strength <= 13) {
         cards[i].change = true
       }
     }
